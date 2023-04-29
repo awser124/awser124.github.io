@@ -6,3 +6,4 @@ function Redirect(){
 	location = "stop/index.html";
 }
 setTimeout(Redirect, 3000);
+//跳转到网站维护界面
