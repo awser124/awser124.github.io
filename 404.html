@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>404 Not Found</title>
+  </head>
+  <body>
+    <center>
+      <strong>
+      <td valign="center">
+      <em style="font-size:38px"><font color="red">404 Not Found</font></em>
+      <p><font size="18px">这里什么都没有。B站：半不了
+世的空城 邮箱：www.comeon.com@outlook.com</font></p>
+      <br>
+      <p style="font-size:15px">
+        将在
+        <span id="second">0</span>
+        秒内回到主页。
+      </p>
+      </td>
+      </strong>
+      <script type="text/javascript">
+        var secs=5;
+        for(var i=secs;i>=0;i--){
+        window.setTimeout("doUpdate("+ i + ")",(secs-i)*1000);
+    }
+       function doUpdate(num){
+        document.getElementById("second").innerHTML=num;
+        if(num==0) location.href = "/home";
+    }
+      </script>
+   </center>
+  </body>
+</html>
