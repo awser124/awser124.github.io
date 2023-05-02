@@ -8,6 +8,14 @@
         <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
         <script src="../js/awser.min.js"></script>
+        <script>
+            var c = confirm("首先确认一下，这些视频你承受的了吗？");
+            if(c == true){
+                alert("那好，进去吧。");
+            } else {
+                history.back(-1);
+            }
+        </script>
         <style>
             .warn {
                 color: orange;
