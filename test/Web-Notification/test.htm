@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var notifi = document.getElementsByClassName("notification");
+function a(){
+	Notification.requestPermission( function(status) {
+  	console.log(status); // 仅当值为 "granted" 时显示通知
+  	var n = new Notification("title", {body: "notification body"}); // 显示通知
+});
+Notification.onshow = function() { };
+}
+window.onload = function (){
+	notifi.onclick = function (){
+		a();
+	}
+}
+</script>
+</head>
+<body>
+<button class="notification">通知</button>
+</body>
+</html>

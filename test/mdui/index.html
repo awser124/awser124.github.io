@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- 翻我源码是吧？ -->
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.bootcss.com/mdui/0.4.0/css/mdui.min.css">
+        <link rel="shortcut icon" href="../../source/icon.png" type="image/x-icon">
+        <script src="https://cdn.bootcss.com/mdui/0.4.0/js/mdui.min.js"></script>
+        <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script>
+            function exit(){
+                this.close();
+            }
+        </script>
+        <style>
+            .mdui-toolbar mdui-color-theme mdui-shadow-4 mdui-appbar-scroll-toolbar-hide {
+                  background-color:rgb(145, 34, 255);
+             }
+        </style>
+    </head>
+    <body style="background: rgba(0, 0, 0, 0);">
+        <div class="mdui-toolbar mdui-color-theme mdui-shadow-4 mdui-appbar-scroll-toolbar-hide" id="action" style="position:fixed;top:0;left:0;z-index:2;background-color:rgb(112, 76, 255);   ">
+            <a class="mdui-typo-title" style="color: white">mdui测试</a>
+            <div class="mdui-toolbar-spacer"></div>
+        <button class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons" onclick="window.location.reload()" style="color: white">refresh</i></button>
+        </div>
+        <br><br><br><br>
+        <div class="mdui-tab" mdui-tab>
+            <a href="#example1-tab1" class="mdui-ripple">mdui测试</a>
+            <a href="#example1-tab2" class="mdui-ripple">视频</a>
+            <a href="#example1-tab3" class="mdui-ripple">图片</a>
+          </div>
+          <div id="example1-tab1" class="mdui-p-a-2">
+            <a>&nbsp;&nbsp;&nbsp;</a>
+            <button onclick="exit();" class="mdui-btn mdui-btn-raised">点我</button>
+            <button class="mdui-btn mdui-btn-raised" disabled>DISABLED</button>
+            <br><br>
+            <video width="320" height="240" controls autoplay>
+              <source src="../../vid/1.mp4">
+            </video>
+            <div class="mdui-fab-wrapper" mdui-fab="">
+              <button class="mdui-fab mdui-ripple mdui-color-theme-accent">
+                <i class="mdui-icon material-icons">add</i>
+                <i class="mdui-icon mdui-fab-opened material-icons">close</i>
+              </button>
+              <div class="mdui-fab-dial" style="height: 0px;">
+                <button onclick="location.href='../../index.html'" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-pink" style="transition-delay: 0ms;">
+                  <i class="mdui-icon material-icons">home</i>
+                </button>
+              </div>
+          </div>
+          <div id="example1-tab2" class="mdui-p-a-2">video content</div>
+          <div id="example1-tab3" class="mdui-p-a-2">images content</div>
+        <br>
+        </div>
+    </body>
+</html>
