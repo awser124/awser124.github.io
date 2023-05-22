@@ -5,6 +5,12 @@
 -->
 <html>
 <head>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+<script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 <link rel="stylesheet" href="https://cdn.bootcss.com/mdui/0.4.0/css/mdui.min.css">
 <link rel="shortcut icon" href="source/icon.png" type="image/x-icon">
 <script src="https://cdn.bootcss.com/mdui/0.4.0/js/mdui.min.js"></script>
@@ -22,15 +28,23 @@
 
 </head>
 <body>
-<div class="mdui-toolbar mdui-color-theme mdui-shadow-4 mdui-appbar-scroll-toolbar-hide" id="action" style="position:fixed;top:0;left:0;z-index:2;background-color:rgb(112, 76, 255);   ">
-    <a class="mdui-typo-title" style="color: white">主页</a>
-    <div class="mdui-toolbar-spacer"></div>
-<button class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons" onclick="window.location.reload()" style="color: white">refresh</i></button>
-</div>
-<br>
-<br>
-<br>
-<br>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand">=== awser ===</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a>主页</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 <center>
   <div class="panel-heading font-bold" style="background: linear-gradient(to right,#14b7ff,#b221ff);color: white;"><script type="text/javascript">
                         var now=(new Date()).getHours();
