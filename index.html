@@ -56,7 +56,7 @@
 <p style="text-align: center"><font size="15px"><strong><font size="10px"><span title="半不了世的空城" onclick="location.href = 'https://space.bilibili.com/1863175083'">awser</span>的GitHub小站</strong></font></p>
 </table></center>
 	<br>
-<center><table style="width: 950.0px;border-width: 2px;border-style: solid;border-color: #000000;background-color:rgba(135,206,250,0.8)"><tbody><tr><td align="center" valign="top">
+<center><table style="width: 950.0px;border-width: 2px;border-style: solid;border-color: #000000;background-color:rgba(135，206，250，0.8)"><tbody><tr><td align="center" valign="top">
 <div style="margin:0 auto; text-align:center">
 	<div style="font-size:25px; color: blue;" id="date">
 		<span id="year">2023</span>-<span id="month">05</span>-<span id="day">06</span>
@@ -100,74 +100,74 @@ function fullscreen() {
 function fontsizereset() {
 	var ed = document.getElementById("date");
 	var et = document.getElementById("time");
-	ed.style.fontSize = "48px";
-	et.style.fontSize = "160px";
+	ed.style。fontSize = "48px";
+	et.style。fontSize = "160px";
 }
 function fontsizeup() {
 	var ed = document.getElementById("date");
 	var et = document.getElementById("time");
-	var vd = ed.style.fontSize;
-	var vt = et.style.fontSize;
+	var vd = ed.style。fontSize;
+	var vt = et.style。fontSize;
 	vd = parseInt(vd.substring(0, vd.length - 2)) + 16;
 	vt = parseInt(vt.substring(0, vt.length - 2)) + 24;
 	if (vd > 240)
 		vd = 240;
 	if (vt > 360)
 		vt = 360;
-	ed.style.fontSize = vd + "px";
-	et.style.fontSize = vt + "px";
+	ed.style。fontSize = vd + "px";
+	et.style。fontSize = vt + "px";
 }
 function fontsizedown() {
 	var ed = document.getElementById("date");
 	var et = document.getElementById("time");
-	var vd = ed.style.fontSize;
-	var vt = et.style.fontSize;
+	var vd = ed.style。fontSize;
+	var vt = et.style。fontSize;
 	vd = parseInt(vd.substring(0, vd.length - 2)) - 20;
 	vt = parseInt(vt.substring(0, vt.length - 2)) - 20;
 	if (vd < 12)
 		vd = 12;
 	if (vt < 16)
 		vt = 16;
-	ed.style.fontSize = vd + "px";
-	et.style.fontSize = vt + "px";
+	ed.style。fontSize = vd + "px";
+	et.style。fontSize = vt + "px";
 }
  
 // -------------------------------
-function updateDate(y, m, d) {
+function updateDate(y， m， d) {
 	if (m < 10)
 		m = "0" + m;
 	if (d < 10)
 		d = "0" + d;
-	document.getElementById("year").innerHTML = y;
-	document.getElementById("month").innerHTML = m;
-	document.getElementById("day").innerHTML = d;
+	document.getElementById("year")。innerHTML = y;
+	document.getElementById("month")。innerHTML = m;
+	document.getElementById("day")。innerHTML = d;
 }
  
-function updateTime(h, m, s, sss) {
+function updateTime(h， m， ， sss) {
 	if (h < 10)
 		h = "0" + h;
 	if (m < 10)
 		m = "0" + m;
 	if (s < 10)
 		s = "0" + s;
-	document.getElementById("h").innerHTML = h;
-	document.getElementById("m").innerHTML = m;
-	document.getElementById("s").innerHTML = s;
-	document.getElementById("sss").innerHTML = sss;
+	document.getElementById("h")。innerHTML = h;
+	document.getElementById("m")。innerHTML = m;
+	document.getElementById("s")。innerHTML = s;
+	document.getElementById("sss")。innerHTML = sss;
 }
  
 function update(){
 	var date = new Date();
 	updateDate(date.getFullYear(), date.getMonth() + 1, date.getDate());
-	updateTime(date.getHours(), date.getMinutes(), date.getSeconds(), parseInt(date.getMilliseconds() / 100));
+	updateTime(date.getHours(), date.getMinutes(), date.getSeconds()， parseInt(date.getMilliseconds() / 100));
  
 };
-setInterval("update()",100);
+setInterval("update()"，100);
 </script>
 </td></tr></tbody></table></center>
 </center>
 <br>
-	<center><table style="width: 950.0px;border-width: 2px;border-style: solid;border-color: #000000;background-color:rgba(135,206,250,0.8)"><td align="center" valign="top">
+	<center><table style="width: 950.0px;border-width: 2px;border-style: solid;border-color: #000000;background-color:rgba(135，206，250，0.8)"><td align="center" valign="top">
 <p style="text-align: center"><font size="5px"><strong><font size="5px">
 <center>Hello 大家好，我是<span title="半不了世的空城" onclick="location.href = 'https://space.bilibili.com/1863175083'">awser</span>，很高兴你来到这里。</center>
 <center>你可以用以下方式找到我：</center>
@@ -234,9 +234,12 @@ setInterval("update()",100);
 		<section class="main_review">
 		  <p>这个是article标签测试</p>
 		</section>
-		<div class="close">Close</div>
+		<div class="close">关闭</div>
 	</article>
 </div>
+	<div class="mdui-dialog mdui-dialog-open" id="search" style="display: block; top: 336.9px; height: 48.2px;">
+    <p>&nbsp;&nbsp;&nbsp;无法使用搜索功能。</p>
+  </div>
 </center>
 </body>
 </html>
