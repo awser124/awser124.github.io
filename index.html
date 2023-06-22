@@ -17,6 +17,14 @@
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 <script src="js/awser.min.js"></script>
+<script>
+	var exit = document.getElementById("exit");
+	window.onload = function() {
+     exit.onclick = function() {
+        this.close();
+		 }
+	}
+</script>
 <!-- <script src="js/wzwh.js"></script> 维护 -->
 
 <title>awser</title>
@@ -193,7 +201,7 @@ setInterval("update()"，100);
 	<a href="stop/index.html" class="mdui-list-item mdui-ripple">网站维护</a>
 	<a href="bad.html" class="mdui-list-item mdui-ripple">Bad Request</a>
 	<a href="index.old.html" class="mdui-list-item mdui-ripple">黑暗时期（旧版网站）</a>
-	<a href="javascript:this.close();" class="mdui-list-item mdui-ripple">点我</a>
+	<a id="exit" class="mdui-list-item mdui-ripple">点我</a>
 	<a href="sc/zr/index.html" class="mdui-list-item mdui-ripple">摩斯电码</a>
 	<a href="https://nibeipianle.top/Jvav" class="mdui-list-item mdui-ripple">Jvav官网</a>
 	<a href="http://192.168.0.109:1337/comment/message.php" class="mdui-list-item mdui-ripple">评论区</a>
